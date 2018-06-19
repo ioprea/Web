@@ -1,0 +1,358 @@
+body {
+	background-image: url('images/background.jpg');
+}
+
+.chatDiv {
+	display: none;
+}
+
+.bodyContent {
+	width: 80%;
+	margin: 80px auto;
+}
+
+.leftContent {
+	float: left;
+	width: 40%;
+}
+
+.chatDiv {
+	float: left;
+	width: 40%;
+}
+
+.rightContent {
+	float: right;
+	width: 40%;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#menu {
+    display: flex;
+    color: #458B00;
+}
+
+#menu ul li {
+    border-right: 1px solid #000;
+    line-height: 10px;
+
+}
+
+header #menu ul li:last-child {
+	border: none;
+}
+
+
+#primaryMenu {
+	display: block;
+	margin: 0px auto;
+}
+
+#primaryMenu ul {
+	text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#primaryMenu ul li {
+	vertical-align: middle;
+    float: left;
+    color: black;
+    display:inline-block;
+}
+
+#primaryMenu ul li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+#primaryMenu ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.loginFContainer {
+  background-color: white;
+}
+
+.signupContainer {
+  background-color: white;
+}
+
+.uploadPhotoClass {
+  background-color: white;
+}
+
+.slideshow-container {
+  width: 10%;
+  position: relative;
+  margin: auto;
+}
+
+#slideShow div img {
+  width: 100%;
+  height: 30%;
+}
+
+#slideItem {
+  width: 10%;
+  height: 10%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-top: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer {
+	vertical-align: top;
+	padding-left: 200px;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom:0;
+	width:80%;
+	height:60px;
+}
+
+.social-icons{
+}
+.social-icons a img{
+	margin-right:0.5em;
+}
+.social-icons a img:hover{
+	opacity:0.8;
+}
+
+
+.loginFContainer {
+    padding: 16px;
+}
+
+.loginF {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+
+}
+
+.signupF {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+
+}
+
+.loginF-content {
+    background-color: #fefefe;
+    margin: 7% auto 14% auto;
+    border: 1.2px solid;
+    width: 75%;
+}
+
+.close {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=password] {
+    width: 220px;
+    white-space: normal;
+    padding: 14px 22px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1.5px solid #ccc;
+    box-sizing: border-box;
+}
+
+#slideButtons {
+  text-align: center;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    line-height: 1px;
+    margin-right: 30px;
+    width: 100px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 14px 20px;
+    background-color: red;
+}
+
+footer div span {
+  font-size: large;
+  vertical-align: top;
+
+}
+
+/* The uploadClass (background) */
+
+.uploadClass {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Sit on top */
+    left: 0px;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* uploadClass Content/Box */
+
+.uploadClass-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    padding-left: 20px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
